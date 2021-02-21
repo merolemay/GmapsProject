@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace GmapsProject
 {
@@ -42,7 +43,8 @@ namespace GmapsProject
             comboBox1.Items.Add("Cauca");
             comboBox1.Items.Add("Chocó");
             comboBox1.Items.Add("Nariño");
-            
+
+            comboBox1.SelectedItem = "Departamento";
         }
 
         private void dataViewLoad()
@@ -111,27 +113,12 @@ namespace GmapsProject
 
         }
 
-        private void load_table()
-        {
-            //reset your chart series and legends
-            chart1.Series.Clear();
-            chart1.Series.Add(null);
-
-        }
-
+     
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void elementHost1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
-        {
-
-        }
     }
 }
